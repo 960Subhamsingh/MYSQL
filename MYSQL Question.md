@@ -10,7 +10,7 @@
 
 **3. How do you display the structure of the Movies table?**
 
-**Answer:-**  desc Movies;
+**Answer:-**  desc Movies; 
 
 **4. How do you select all columns from the Movies tables?**
 
