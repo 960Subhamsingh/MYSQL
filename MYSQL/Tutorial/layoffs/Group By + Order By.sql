@@ -3,17 +3,16 @@
 -- GROUP BY is going to allow us to group rows that have the same data and run aggregate functions on them
 
 SELECT *
-FROM employee_demographics;
+FROM employee;
 
 -- when you use group by  you have to have the same columns you're grouping on in the group by statement
 SELECT gender
-FROM employee_demographics
-GROUP BY gender
-;
+FROM employee
+GROUP BY gender;
 
 
 SELECT first_name
-FROM employee_demographics
+FROM employee 
 GROUP BY gender
 ;
 
@@ -98,13 +97,5 @@ ORDER BY 5 DESC, 4 DESC;
 #Now best practice is to use the column names as it's more overt and if columns are added or replaced or something in this table it will still use the right columns to order on.
 
 #So that's all there is to order by - fairly straight forward, but something I use for most queries I use in SQL
-
-
-
-
-
-
-
-
 
 

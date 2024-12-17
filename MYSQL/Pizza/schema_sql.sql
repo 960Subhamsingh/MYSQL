@@ -1,10 +1,10 @@
 DROP TABLE IF EXISTS runners;
 CREATE TABLE runners (
-  "runner_id" INTEGER,
-  "registration_date" DATE
+  runner_id INTEGER,
+  registration_date DATE
 );
 INSERT INTO runners
-  ("runner_id", "registration_date")
+  (runner_id, registration_date)
 VALUES
   (1, '2021-01-01'),
   (2, '2021-01-03'),
@@ -14,7 +14,7 @@ VALUES
 
 DROP TABLE IF EXISTS customer_orders;
 CREATE TABLE customer_orders (
-  "order_id" INTEGER,
+  order_id INTEGER,
   "customer_id" INTEGER,
   "pizza_id" INTEGER,
   "exclusions" VARCHAR(4),
@@ -23,7 +23,7 @@ CREATE TABLE customer_orders (
 );
 
 INSERT INTO customer_orders
-  ("order_id", "customer_id", "pizza_id", "exclusions", "extras", "order_time")
+  (order_id, customer_id, pizza_id, exclusions, extras, order_time)
 VALUES
   ('1', '101', '1', '', '', '2020-01-01 18:05:02'),
   ('2', '101', '1', '', '', '2020-01-01 19:00:52'),
