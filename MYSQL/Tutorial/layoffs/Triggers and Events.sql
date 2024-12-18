@@ -8,12 +8,12 @@
 
 SELECT * FROM employee_salary;
 
-SELECT * FROM employee_demographics;
+SELECT * FROM employees;
 
 -- so really when we get a new row or data is inserted into the payments table we want a trigger to update the correct invoice 
 -- with the amount that was paid
 -- so let's write this out
-USE parks_and_recreation;
+USE  HR;
 DELIMITER $$
 
 CREATE TRIGGER employee_insert2
@@ -28,7 +28,7 @@ BEGIN
 -- we want to update our client invoices table
 -- and set the total paid = total_paid (if they had already made some payments) + NEW.amount_paid
 -- NEW says only from the new rows that were inserted. There is also OLD which is rows that were deleted or updated, but for us we want NEW
-    INSERT INTO employee_demographics (employee_id, first_name, last_name) VALUES (NEW.employee_id,NEW.first_name,NEW.last_name);
+    INSERT INTO employees (employee_id, first_name, last_name) VALUES (NEW.employee_id,NEW.first_name,NEW.last_name);
 END $$
 
 DELIMITER ; 
@@ -84,7 +84,7 @@ END $$
 
 -- if we run it again you can see Jerry is now fired -- or I mean retired
 SELECT * 
-FROM parks_and_recreation.employee_demographics;
+FROM employees;
 
 
 

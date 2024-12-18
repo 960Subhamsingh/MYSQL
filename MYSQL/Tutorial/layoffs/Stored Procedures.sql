@@ -99,7 +99,7 @@ CALL large_order_totals3();
 -- -------------------------------------------------------------------------
 
 -- we can also add parameters
-USE `parks_and_recreation`;
+
 DROP procedure IF EXISTS `large_salaries3`;
 -- it automatically adds the dilimiter for us
 DELIMITER $$
@@ -113,38 +113,5 @@ END $$
 
 DELIMITER ;
 
-
-
 CALL large_salaries3(1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

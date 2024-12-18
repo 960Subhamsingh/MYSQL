@@ -4,6 +4,15 @@ alter table employee change  MyUnknownColumn  emp_id int;
 
 alter table departments_data change emp_id Dep_id int;
 
+
+alter table employees change `Full Name` `Name` VARCHAR(25);
+
+alter table  employees change  `Annual Salary` `salary` int ;
+
+UPDATE employees SET  `Annual salary`  = SUBSTRING(`Annual salary`, 2);
+
+ALTER TABLE employees MODIFY `Annual Salary` INT;
+
 --Union
 
 SELECT 
