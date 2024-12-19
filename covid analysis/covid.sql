@@ -1,4 +1,7 @@
-
+desc covid;
+SELECT location, SUM(infected), SUM(vaccinated), (SUM(infected)/SUM(vaccinated) * 100) AS infected_vaccinated_likelihood
+FROM info
+GROUP BY location
 
 -- show databases
 
