@@ -3,6 +3,9 @@
 /*SQL SKILLS: joins, date manipulation, regular expressions, views, stored procedures, aggregate functions, string manipulation*/
  
 -- --------------------------------------------------------------------------------------------------------------
+create database instagram;
+
+use instagram;
 
 /*Ques.1 The first 10 users on the platform*/
 
@@ -33,10 +36,8 @@ CREATE VIEW totalregistrations AS
     GROUP BY 1
     ORDER BY 2 DESC;
     
-SELECT 
-    *
-FROM
-    totalregistrations;
+SELECT  *
+FROM totalregistrations;
 
 /*Version 2*/
 
@@ -170,7 +171,6 @@ LIMIT 10;
 -- --------------------------------------------------------------------------------------------------------------
 
 /*Ques.13 The most popular tag names by likes*/
-
 SELECT 
     t.tag_name AS 'Tag Name',
     COUNT(l.photo_id) AS 'Number of Likes'
@@ -186,7 +186,6 @@ LIMIT 10;
 -- --------------------------------------------------------------------------------------------------------------
 
 /*Ques.14 The users who have liked every single photo on the site*/
-
 SELECT 
     u.id, u.username, COUNT(l.user_id) AS total_likes_by_user
 FROM

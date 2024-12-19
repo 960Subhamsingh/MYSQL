@@ -8,6 +8,11 @@ USE imdb;
 -- 1) we can take count of the table individually 
 -- 2)  or we can fetch the names from information schema and sum the table row to get the count
 
+SELECT 
+    movie_id, budget
+FROM movie;
+
+desc genre;
 
 -- APPROACH 1 SOLUTION: 
 
