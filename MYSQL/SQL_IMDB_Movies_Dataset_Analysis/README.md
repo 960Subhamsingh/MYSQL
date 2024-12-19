@@ -43,51 +43,49 @@ If you don't wish to perform the data loading part, you can directly download th
 
 **Entity Relationship Diagram (ERD)**
 
-![ERdiagram](https://user-images.githubusercontent.com/112953571/206124002-580b22fa-fd77-4b97-b406-ab9b8f146bd5.png)
+![ERdiagram](./Screenshots/ERdiagram.png)
 
 
 **Table (Schema)**
 
 
-![table](https://user-images.githubusercontent.com/112953571/206124083-e88e8b12-6f2c-4795-bfa9-06e7a1927a60.png)
+![table](./Screenshots/table.png)
 
 
 **Movies Table**
 
 
-![movies](https://user-images.githubusercontent.com/112953571/206124486-35373841-2f28-4f8a-be80-6d4fd6a169dd.png)
+![movies](./Screenshots/movies.png)
 
 
 
 **genre**
 
-![genre](https://user-images.githubusercontent.com/112953571/206143741-0e343e70-e111-4c8f-be32-09e525984557.png)
+![genre](./Screenshots/genre.png)
 
 
 **director_mapping**
 
 
-![director_mapping](https://user-images.githubusercontent.com/112953571/206144891-dfaa9903-f5f7-4d44-9845-570ba60e836e.png)
+![director_mapping](./Screenshots/director_mapping.png)
 
 
 
 **role_mapping**
 
-![role_maping](https://user-images.githubusercontent.com/112953571/206144320-0f42261b-7d54-47ea-90bd-f0c6ed9951d1.png)
+![role_maping](./Screenshots/role_maping.png)
 
 
 
 **names**
 
-![names](https://user-images.githubusercontent.com/112953571/206144422-32d2f7d1-d13c-4cbd-9540-ac0ba1f716f7.png)
+![names](./Screenshots/names.png)
 
 
 **ratings**
 
 
-![ratings](https://user-images.githubusercontent.com/112953571/206144536-b0784ff4-173c-472c-b0fa-081e55aa1b9f.png)
-
-
+![ratings](./Screenshots/ratings.png)
 
 
 ## Queries Performed On The Dataset
@@ -107,7 +105,7 @@ GROUP BY TABLE_NAME;
 ```
 **OUTPUT**
 
-![ans1](https://user-images.githubusercontent.com/112953571/206150808-d64e894a-5017-4818-a113-4707dd72a972.png)
+![ans1](./Screenshots/ans1.png)
 
 
 Q2. WHICH COLUMNS IN THE MOVIE TABLE HAVE NULL VALUES?
@@ -130,7 +128,7 @@ SELECT
 ```
 **OUTPUT**
 
-![ans2](https://user-images.githubusercontent.com/112953571/206368293-048ccb9b-e497-4e2d-946a-62f00090d13e.png)
+![ans2](./Screenshots/ans2.png)
 
 
 
@@ -157,10 +155,10 @@ ORDER  BY month_num;
 
 **OUTPUT**
 
-![ans3 1](https://user-images.githubusercontent.com/112953571/206368356-76d2a362-978a-4e60-be50-237ac6b4985d.png)
+![ans3 1](./Screenshots/ans3.1.png)
 
 
-![ans3 2](https://user-images.githubusercontent.com/112953571/206368361-d4ead4c2-bc87-4ff0-9aaa-54c4b514eb4c.png)
+![ans3 2](./Screenshots/ans3.2.png)
 
 
 
@@ -179,7 +177,7 @@ WHERE  ( upper(country) LIKE '%INDIA%'
 **OUTPUT**
 
 
-![ans4](https://user-images.githubusercontent.com/112953571/206368427-be6e4bd3-0cd5-4fbc-9280-e197c5526726.png)
+![ans4](./Screenshots/ans4.png)
 
 
 
@@ -195,7 +193,7 @@ SELECT DISTINCT genre FROM   genre;
 **OUTPUT**
 
 
-![ans5](https://user-images.githubusercontent.com/112953571/206368501-72c41d0a-0280-45d0-b4d4-6bfa6e7bf353.png)
+![ans5](./Screenshots/ans5.png)
 
 
 
@@ -216,7 +214,7 @@ ORDER BY   number_of_movies DESC limit 1 ;
 ```
 **OUTPUT**
 
-![ans6](https://user-images.githubusercontent.com/112953571/206368543-575b51e4-9a29-4dd8-b698-10cb74e52e16.png)
+![ans6](./Screenshots/ans6.png)
 
 
 
@@ -238,8 +236,7 @@ GROUP BY genre_count;
 ```
 **OUTPUT**
 
-![ans7](https://user-images.githubusercontent.com/112953571/206368576-4c44c088-6208-4f73-a409-147215d6666e.png)
-
+![ans7](./Screenshots/ans7.png)
 
 
 Q8.WHAT IS THE AVERAGE DURATION OF MOVIES IN EACH GENRE? 
@@ -258,7 +255,7 @@ ORDER BY avg_duration DESC;
 ```
 **OUTPUT**
 
-![ans8](https://user-images.githubusercontent.com/112953571/206368617-4ac5a982-687c-4b85-a065-527434edaca0.png)
+![ans8](./Screenshots/ans8.png)
 
 
 
@@ -284,9 +281,7 @@ WHERE  genre = "THRILLER" ;
 ```
 **OUTPUT**
 
-![ans9](https://user-images.githubusercontent.com/112953571/206368660-46b80fff-cd45-46ba-8f61-83745d3c54bb.png)
-
-
+![ans9](./Screenshots/ans9.png)
 
 
 Q10.  FIND THE MINIMUM AND MAXIMUM VALUES IN  EACH COLUMN OF THE RATINGS TABLE EXCEPT THE movies_id COLUMN?
@@ -306,11 +301,10 @@ FROM   ratings;
 ```
 **OUTPUT**
 
-![ans10](https://user-images.githubusercontent.com/112953571/206368708-336ccd86-de9a-4269-869d-27934b10df56.png)
+![ans10](./Screenshots/ans10.png)
 
 
 Q11. WHICH ARE THE TOP 10 MOVIES BASED ON AVERAGE RATING?
-
 
 **QUERY**
 
@@ -327,7 +321,7 @@ ON mov.id = rat.movie_id limit 10;
 **OUTPUT**
 
 
-![ans11](https://user-images.githubusercontent.com/112953571/206368755-81d6b32e-95f1-4561-8984-ed3603242e89.png)
+![ans11](./Screenshots/ans11.png)
 
 
 Q12. SUMMARISE THE RATINGS TABLE BASED ON THE MOVIE COUNTS BY MEDIAN RATINGS.
@@ -345,8 +339,7 @@ ORDER BY movie_count DESC;
 ```
 **OUTPUT**
 
-![ans12](https://user-images.githubusercontent.com/112953571/206368806-18cac043-9131-4561-9c3c-8090214c06f4.png)
-
+![ans12](./Screenshots/ans12.png)
 
 
 Q13. WHICH PRODUCTION HOUSE HAS PRODUCED THE MOST NUMBER OF HIT MOVIES (AVERAGE RATING > 8)?
@@ -367,8 +360,7 @@ GROUP BY production_company;
 ```
 **OUTPUT**
 
-![ans13](https://user-images.githubusercontent.com/112953571/206368866-620195a0-95e4-4c17-a2f1-aa85ef149543.png)
-
+![ans13](./Screenshots/ans13.png)
 
 
 Q14. HOW MANY MOVIES RELEASED IN EACH GENRE DURING MARCH 2017 IN THE USA HAD MORE THAN 1,000 VOTES?
@@ -393,7 +385,7 @@ ORDER BY movie_count DESC;
 ```
 **OUTPUT**
 
-![ans14](https://user-images.githubusercontent.com/112953571/206368918-a0c962e1-4e26-4d21-af42-888fc50901ab.png)
+![ans14](./Screenshots/ans14.png)
 
 
 Q15. FIND MOVIES OF EACH GENRE THAT START WITH THE WORD ‘THE’ AND WHICH HAVE AN AVERAGE RATING > 8?
@@ -414,7 +406,7 @@ ORDER BY avg_rating DESC;
 ```
 **OUTPUT**
 
-![ans15](https://user-images.githubusercontent.com/112953571/206368979-bc0664f6-340e-4d29-a67f-8dd6a2c92753.png)
+![ans15](./Screenshots/ans15.png)
 
 
 Q16. OF THE MOVIES RELEASED BETWEEN 1 APRIL 2018 AND 1 APRIL 2019, HOW MANY WERE GIVEN A MEDIAN RATING OF 8?
@@ -437,7 +429,7 @@ GROUP BY median_rating;
 **OUTPUT**
 
 
-![ans16](https://user-images.githubusercontent.com/112953571/206369016-81653524-852e-4fa4-a12c-40f2c1b13d21.png)
+![ans16](./Screenshots/ans16.png)
 
 
 Q17. DO GERMAN MOVIES GET MORE VOTES THAN ITALIAN MOVIES?
@@ -458,7 +450,7 @@ GROUP BY country;
 **OUTPUT**
 
 
-![ans17](https://user-images.githubusercontent.com/112953571/206369105-beb5bd94-1898-416c-a60f-9af9dd2652eb.png)
+![ans17](./Screenshots/ans17.png)
 
 
 Q18. WHICH COLUMNS IN THE NAMES TABLE HAVE NULL VALUES?
@@ -488,7 +480,7 @@ FROM names;
 ```
 **OUTPUT**
 
-![ans18](https://user-images.githubusercontent.com/112953571/206369145-4fe40858-379d-4247-8cf0-37d6387d126d.png)
+![ans18](./Screenshots/ans18.png)
 
 
 Q19. WHO ARE THE TOP THREE DIRECTORS IN THE TOP THREE GENRES WHOSE MOVIES HAVE AN AVERAGE RATING > 8?
@@ -525,8 +517,7 @@ ORDER BY movie_count DESC limit 3 ;
 ```
 **OUTPUT**
 
-![ans19](https://user-images.githubusercontent.com/112953571/206369208-bda9ede8-3fbe-4418-b89b-a7238e2ee857.png)
-
+![ans19](./Screenshots/ans19.png)
 
 
 Q20. WHO ARE THE TOP TWO ACTORS WHOSE MOVIES HAVE A MEDIAN RATING >= 8?
@@ -552,9 +543,7 @@ ORDER BY movie_count DESC LIMIT 2;
 **OUTPUT**
 
 
-![ans20](https://user-images.githubusercontent.com/112953571/206369258-1b37ed0a-9e18-4732-82ab-5ae3fd8147a2.png)
-
-
+![ans20](./Screenshots/ans20.png)
 
 
 Q21. WHICH ARE THE TOP THREE PRODUCTION HOUSES BASED ON THE NUMBER OF VOTES RECEIVED BY THEIR MOVIES?
@@ -571,15 +560,13 @@ INNER JOIN ratings AS rat
 	  ON rat.movie_id = mov.id
 GROUP BY production_company LIMIT 3;
 
-
 ```
 **OUTPUT**
 
 
-![ans21](https://user-images.githubusercontent.com/112953571/206369299-51e08111-e128-4143-827c-15912a4cb0ae.png)
+![ans21](./Screenshots/ans21.png)
 
 Q22. RANK ACTORS WITH MOVIES RELEASED IN INDIA BASED ON THEIR AVERAGE RATINGS. WHICH ACTOR IS AT THE TOP OF THE LIST?
-
 
 **QUERY**
 
@@ -607,8 +594,7 @@ FROM actor_summary;
 **OUTPUT**
 
 
-![ans22](https://user-images.githubusercontent.com/112953571/206369335-62655c80-729d-4e49-984d-89fb5883b1be.png)
-
+![ans22](./Screenshots/ans22.png)
 
 
 Q23.Find out the top five actresses in Hindi movies released in India based on their average ratings? 
@@ -642,9 +628,7 @@ FROM actress_detail LIMIT 5;
 ```
 **OUTPUT**
 
-![ans23](https://user-images.githubusercontent.com/112953571/206369372-99fbf938-834f-4083-81d5-6f93b50912ca.png)
-
-
+![ans23](./Screenshots/ans23.png)
 
 
 Q24. Select thriller movies as per avg rating and classify them in the following category: 
@@ -682,8 +666,7 @@ from thriller_movies ;
 **OUTPUT**
 
 
-![ans24](https://user-images.githubusercontent.com/112953571/206369418-8918b5ab-9714-47ac-8696-4b08d00b2ce6.png)
-
+![ans24](./Screenshots/ans24.png)
 
 Q25. What is the genre-wise running total and moving average of the average movie duration? 
 
@@ -703,8 +686,7 @@ ORDER BY genre;
 ```
 **OUTPUT**
 
-![ans25](https://user-images.githubusercontent.com/112953571/206369463-a880dd4b-b793-46f8-b7a0-807fe7c619e0.png)
-
+![ans25](./Screenshots/ans25.png)
 
 
 Q26. WHICH ARE THE FIVE HIGHEST-GROSSING MOVIES OF EACH YEAR THAT BELONG TO THE TOP THREE GENRES?
@@ -740,8 +722,7 @@ ORDER BY YEAR;
 ```
 **OUTPUT**
 
-
-![ans26](https://user-images.githubusercontent.com/112953571/206369504-8b8a2433-c024-4fa5-8943-c5f2b1e9b6ee.png)
+![ans26](./Screenshots/ans26.png)
 
 
  Q27.  WHICH ARE THE TOP TWO PRODUCTION HOUSES THAT HAVE PRODUCED THE HIGHEST NUMBER OF HITS (MEDIAN RATING >= 8) AMONG MULTILINGUAL MOVIES?
@@ -768,9 +749,7 @@ FROM production_company_detail LIMIT 2;
 **OUTPUT**
 
 
-![ans27](https://user-images.githubusercontent.com/112953571/206369549-82462093-b091-4807-a62c-d45f42036b85.png)
-
-
+![ans27](./Screenshots/ans27.png)
 
 Q28. WHO ARE THE TOP 3 ACTRESSES BASED ON NUMBER OF SUPER HIT MOVIES (AVERAGE RATING >8) IN DRAMA GENRE?
 
@@ -804,8 +783,7 @@ FROM actress_summary LIMIT 3;
 **OUTPUT**
 
 
-![ans28](https://user-images.githubusercontent.com/112953571/206369600-650a5484-bb37-4854-b27c-50ad10467f07.png)
-
+![ans28](./Screenshots/ans28.png)
 
 Q29. GET THE FOLLOWING DETAILS FOR TOP 9 DIRECTORS (BASED ON NUMBER OF MOVIES)
 
@@ -860,9 +838,7 @@ ORDER BY Count(movie_id) DESC limit 9;
 ```
 **OUTPUT**
 
-![ans29](https://user-images.githubusercontent.com/112953571/206369635-adfe8807-3b2c-452d-a43b-282c3579fe10.png)
-
-
+![ans29](./Screenshots/ans29.png)
 
 ## Summary
 
