@@ -19,3 +19,5 @@ Key datasets for this case study
 
 ## Entity Relationship Diagram
 ![ER Dig](/MYSQL/Data%20Bank/ERD.JPG)
+
+

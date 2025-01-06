@@ -12,4 +12,8 @@ For this case study there is a total of 4 datasets for this case study - however
 - **product_prices**
 
 ## Entity Relationship Diagram
+
 ![ER Dig](</MYSQL/Balanced Tree/ERD.JPG>)
+
+
+[Data Analysis](./questions_and_answers.md)

@@ -5,7 +5,7 @@ All solutions were coded using  MYSQL.
 
 ## Studies
 
-* [ Study ](  "Subham Kumar") 
+* [ Study ](./Tutorial/ "Subham Kumar") 
 
 * [Study By Pizza Runner](../MYSQL/Pizza/README.md "Pizza") 
 

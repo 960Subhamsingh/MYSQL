@@ -1,4 +1,3 @@
-# Join,union and indexing,cte
 
 -- create database
 create database operation;

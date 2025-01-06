@@ -1,4 +1,4 @@
-#Now let's look at string functions. These help us change and look at strings differently.
+-- Now let's look at string functions. These help us change and look at strings differently.
 
 SELECT 
     *
@@ -6,7 +6,7 @@ FROM
     employees;
 
 
-#Length will give us the length of each value
+-- Length will give us the length of each value
 SELECT 
     LENGTH('MONU');
 
@@ -32,13 +32,13 @@ SELECT
 FROM
     employees;
 
-#Now if you have values that have white space on the front or end, we can get rid of that white space using TRIM
+-- Now if you have values that have white space on the front or end, we can get rid of that white space using TRIM
 SELECT TRIM('Subham');
 
-#Now if we have white space in the middle it doesn't work
+-- Now if we have white space in the middle it doesn't work
 SELECT LTRIM('     I           love          SQL');
 
-#There's also L trim for trimming just the left side
+-- There's also L trim for trimming just the left side
 SELECT LTRIM('     I love SQL');
 
 #There's also R trim for trimming just the Right side

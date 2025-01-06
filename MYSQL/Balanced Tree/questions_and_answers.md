@@ -4,7 +4,7 @@
 
 **A.  High Level Sales Analysis**
 
-The first question is asked vaguely.  Although I feel the second answer is the correct one, the question is somewhat ambiguous so I added a little clarification. jaime.m.shaker@gmail.com 
+The first question is asked vaguely.  Although I feel the second answer is the correct one, the question is somewhat ambiguous so I added a little clarification. kumarsubham0734@gmail.com
 
 #### 1a. What was the total quantity sold for all products?
 

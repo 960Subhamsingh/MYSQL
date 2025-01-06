@@ -1,6 +1,6 @@
 some example of these RANK, DENSE_RANK, ROW_NUMBER SQL Analytical Functions Simplified
-ChatGPT said:
-ChatGPT
+
+
 Sure! Here’s a simplified overview of the SQL analytical functions RANK, DENSE_RANK, and ROW_NUMBER, along with examples for each.
 
 1. ROW_NUMBER()
@@ -8,8 +8,6 @@ This function assigns a unique sequential integer to rows within a partition of 
 
 Example:
 
-sql
-Copy code
 SELECT 
     employee_id,
     salary,
@@ -23,8 +21,6 @@ This function assigns a rank to each row within a partition, with gaps in the ra
 
 Example:
 
-sql
-Copy code
 SELECT 
     employee_id,
     salary,
@@ -38,14 +34,15 @@ This function is similar to RANK(), but it does not leave gaps in the ranking wh
 
 Example:
 
-sql
-Copy code
+
 SELECT 
     employee_id,
     salary,
     DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank
 FROM 
     employees;
+
+    
 In this case, if two employees have the same salary and are ranked 1, the next rank will be 2, without any gaps.
 
 Summary
