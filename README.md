@@ -111,7 +111,7 @@ Manoj           21-APR-24
 
 
 Q  find the average marks of each student separated by comma   
-https://datasculptor.blogspot.com/2024/04/winning-lottery.html
+
 
  top 1% of salaries by using the PERCENTILE function.   
 

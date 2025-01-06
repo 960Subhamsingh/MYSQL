@@ -1,0 +1,31 @@
+--create user in Oracle Databases
+
+create user user_name identified user_password
+
+example 
+
+create user store identified tiger;
+
+
+--grant priviledges
+
+grant create session user_name
+
+example 
+
+grant create session store;
+
+--Assigin user_name 
+
+-- user_name = store
+
+-- connect root user_databases 
+-- first time to  type sql commandline to connect you the user_databases
+
+conn
+Enter-user-name : store
+Enter-user-password - tiger
+  
+
+
+

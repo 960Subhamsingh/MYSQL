@@ -67,7 +67,6 @@ SELECT
 (SELECT count(*) FROM movie WHERE production_company  is NULL) as production_company
 ;
 
-
 -- APPROACH 2 SOLUTION:
 
 SELECT Sum(CASE
