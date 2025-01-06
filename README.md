@@ -50,7 +50,7 @@ Example:
 
 ## find all the customers who placed orders on three consecutive days 
 
-## crweate table  
+## create table  
 
 SQL> create table orders( customer_name varchar(15) , order_date date);
 

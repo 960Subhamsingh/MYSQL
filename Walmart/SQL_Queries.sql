@@ -283,4 +283,3 @@ SELECT city,  ROUND(AVG(tax_pct), 2) AS avg_tax_pct FROM sales GROUP BY city ORD
 SELECT customer_type, AVG(tax_pct) AS total_tax
     FROM sales  GROUP BY customer_type ORDER BY total_tax;  
  
-
