@@ -140,3 +140,5 @@ order by f.title;
 
 # H2) How much money and rentals we make for Store 1 by day?
 # What are the three top earning days so far?
+
+

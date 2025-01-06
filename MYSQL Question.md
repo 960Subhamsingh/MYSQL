@@ -1,5 +1,3 @@
-
-
 **1. How do you switch tp the IMBD Databases?**
 
 **Answer:-** Use IMBD;
@@ -332,3 +330,5 @@ operators.
 **Syntax:-** alter table Table_name modify Column_name datatype not null  auto_increment; 
 
 **Answer:-** alter table language modify id int not null  auto_increment;
+
+
